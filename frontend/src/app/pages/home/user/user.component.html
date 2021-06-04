@@ -1,0 +1,21 @@
+<div class="h-screen w-screen flex bg-gray-200">
+  <app-navbar></app-navbar>
+
+  <div class="w-full">
+    <p class="text-4xl text-center p-20">Profil</p>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="w-full p-20">
+      <div class="mt-7">
+        <input formControlName="email" type="text" placeholder="Email" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+      </div>
+      <div class="mt-7">
+        <input formControlName="name" type="text" placeholder="Nom" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+      </div>
+      <div class="mt-7">
+        <button type="submit" class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+          Modifier son compte
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

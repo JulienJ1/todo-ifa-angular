@@ -1,0 +1,52 @@
+<!--<div class="h-screen w-screen flex bg-gray-200">-->
+<!--  &lt;!&ndash; container &ndash;&gt;-->
+
+<!--  <app-navbar></app-navbar>-->
+
+<!--  <p>cc</p>-->
+
+<!--</div>-->
+
+<div class="font-sans">
+  <div class="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
+    <div class="relative sm:max-w-sm w-full">
+      <div class="card bg-blue-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
+      <div class="card bg-red-400 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
+      <div class="relative w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md">
+        <label for="" class="block mt-3 text-sm text-gray-700 text-center font-semibold">
+          Login
+        </label>
+        <form class="mt-10" [formGroup]="form" (ngSubmit)="submit()" >
+
+          <div class="mt-7">
+            <input formControlName="name" placeholder="Nom" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+          </div>
+
+          <div class="mt-7">
+            <input formControlName="email" type="email" placeholder="Email" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+          </div>
+
+          <div class="mt-7">
+            <input formControlName="password" type="password" placeholder="Mot de passe" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+          </div>
+
+          <div class="mt-7">
+            <button type="submit" class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+              S'inscrire
+            </button>
+          </div>
+
+          <div class="mt-7">
+            <div class="flex justify-center items-center">
+              <label class="mr-2" >Déjà un compte ?</label>
+              <a routerLink="/auth/register" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                Connectez-vous maintenant
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

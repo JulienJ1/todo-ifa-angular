@@ -1,0 +1,10 @@
+<div class="h-screen w-screen flex bg-gray-200">
+  <app-navbar></app-navbar>
+
+  <div class="grid grid-cols-3 gap-6 w-full p-6">
+    <app-list-task label="A faire" [state]="0" [tasks$]="tasksState0$" (onChangeTask)="initData()" ></app-list-task>
+    <app-list-task label="En cours" [state]="1" [tasks$]="tasksState1$" (onChangeTask)="initData()"></app-list-task>
+    <app-list-task label="Terminé" [state]="2" [tasks$]="tasksState2$" (onChangeTask)="initData()"></app-list-task>
+  </div>
+
+</div>
